@@ -4,7 +4,7 @@ const Template = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="flex w-[70vw] flex-wrap justify-center">{children}</div>
+    <div className="flex w-[55vw] flex-wrap justify-center">{children}</div>
   );
 };
 
