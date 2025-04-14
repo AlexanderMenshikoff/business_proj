@@ -3,7 +3,7 @@ import { ThirdBlockData } from '../data';
 
 const ThirdBlock = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] mb-[50px]">
       <p className="text-[12px] text-[#ffc44e] mb-[10px]">
         Data at your fingertips
       </p>
