@@ -1,26 +1,18 @@
-interface IfirstBlockData {
+interface IDataInsightsOverview {
   mainHeader: string;
   text: string;
 }
 
-interface IsecondBlockData {
+interface IDataInsightsBlock {
   header: string;
   text: string;
   img: string;
   imgWidth: number;
-  className: string;
+  className?: string; 
   id: number;
 }
 
-interface IthirdBlockData {
-    header: string;
-    text: string;
-    img: string;
-    imgWidth: number;
-    id: number;
-  }
-
-interface IcustomerReviewData {
+interface ICustomerReviewData {
   companyLogo: string;
   companyLogoWidth: number,
   customerReview: string;
@@ -36,24 +28,40 @@ export interface IFAQBlockData {
   id:number;
 }
 
-export interface IfooterLinksData {
+export interface IFooterLinksData {
   columnName: string;
   columnText: string[];
   id:number;
 }
 
-export const firstBlockData: IfirstBlockData = {
+interface ICompaniesLogosData {
+  src: string;
+  alt: string;
+  height: number;
+  width: number;
+  className?:string;
+  id:number;
+}
+
+export const dataInsightsOverviewData: IDataInsightsOverview = {
   mainHeader: 'Powerful data insights for all',
   text: 'Torch makes data analysis easy for everyone. Visualise key metrics, track perfomance, and dsicover trends without needing a data science background.',
 };
 
-export const secondBlockData: IsecondBlockData[] = [
+export const companiesLogosData:ICompaniesLogosData[] = [
+  { src: '/companies_logos/someday_logo.png', alt: 'Someday logo', height: 100, width: 90, id:1 },
+  { src: '/companies_logos/accent_logo.png', alt: 'Accent logo', height: 100, width: 90, id:2 },
+  { src: '/companies_logos/irene_logo.png', alt: 'Irene logo', height: 90, width: 90, className: 'lg:mt-[5px] mt-[3px]', id:3 },
+  { src: '/companies_logos/na_logo.png', alt: 'Na logo', height: 70, width: 60, id:4 }
+];
+
+export const actionableInsightsSectionData: IDataInsightsBlock[] = [
   {
     header: 'Easy-to-use dashboards',
     text: 'Creative intuitive, custom dashboards to visualise your most important metrics. No coding or technical skills required.',
     img: '/blocks_imgs/img_block.png',
     imgWidth: 30,
-    className: 'col-span-2 row-span-3',
+    className: 'sm:mb-0 sm:w-auto col-span-2 row-span-3',
     id: 1,
   },
   {
@@ -61,7 +69,7 @@ export const secondBlockData: IsecondBlockData[] = [
     text: 'Share dashboards and reports with your team for seamless collaboration. Comment, edit, and review data insights together.',
     img: '/blocks_imgs/img_arrow.png',
     imgWidth: 35,
-    className: 'col-span-2 row-span-2 col-start-1 row-start-4',
+    className: 'sm:mb-0 sm:w-auto col-span-2 row-span-2 col-start-1 row-start-4',
     id: 2,
   },
   {
@@ -69,7 +77,7 @@ export const secondBlockData: IsecondBlockData[] = [
     text: 'Get the latest insights with real-time data refreshes. Stay on top of changes as they happen, keeping your team informed',
     img: '/blocks_imgs/img_speedometer.png',
     imgWidth: 30,
-    className: 'col-span-2 row-span-2 col-start-3 row-start-1',
+    className: 'sm:mb-0 sm:w-auto col-span-2 row-span-2 col-start-3 row-start-1',
     id: 3,
   },
   {
@@ -77,12 +85,12 @@ export const secondBlockData: IsecondBlockData[] = [
     text: 'Set up automated reports to be delivered directly to your inbox. Save time and focus on making decisions, not creating reports.',
     img: '/blocks_imgs/img_wand.png',
     imgWidth: 30,
-    className: 'col-span-2 row-span-3 col-start-3 row-start-3',
+    className: 'sm:mb-0 sm:w-auto col-span-2 row-span-3 col-start-3 row-start-3',
     id: 4,
   },
 ];
 
-export const thirdBlockData:IthirdBlockData[] = [
+export const realTimeInsightsDashboard:IDataInsightsBlock[] = [
   {
     header: 'Instant updates',
     text: 'Always stay up-to-date with live data flowing directly into your dashboard. Track changes as they happen.',
@@ -106,7 +114,7 @@ export const thirdBlockData:IthirdBlockData[] = [
   },
 ];
 
-export const fourthBlockData:IthirdBlockData[] = [
+export const dataVisualizationInsightsData:IDataInsightsBlock[] = [
   {
     header: 'Automated reports',
     text: 'Save time with automated, scheduled reports. Get the insights you need, delivered straight to your inbox.',
@@ -131,7 +139,7 @@ export const fourthBlockData:IthirdBlockData[] = [
 ];
 
 
-export const customersBlockData: IcustomerReviewData[] = [
+export const customersBlockData: ICustomerReviewData[] = [
   {
     companyLogo: '/companies_logos/someday_logo_white.png',
     companyLogoWidth: 120,
@@ -191,7 +199,7 @@ export const FAQBlockData:IFAQBlockData[] = [
 ]
 
 
-export const footerLinksData: IfooterLinksData[]= [
+export const footerLinksData: IFooterLinksData[]= [
   {
     columnName: 'Product',
     columnText: ['Home', 'Features', 'Pricing', 'Sign in'],
