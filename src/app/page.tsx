@@ -1,26 +1,27 @@
 import React from 'react';
 import NavigationPanel from './components/NavigationPanel';
 import Template from './components/Template';
-import FirstBlock from './components/FirstBlock';
-import SecondBlock from './components/SecondBlock';
-import ThirdBlock from './components/ThirdBlock';
-import FourthBlock from './components/FourthBlock';
-import CustomerBlock from './components/CustomerBlock';
+import ActionableInsightsSection from './components/ActionableInsightsSection';
+import DataInsightsOverview from './components/DataInsightsOverview';
+import RealTimeInsightsDashboard from './components/RealTimeInsightsDashboard';
+import DataVisualizationInsights from './components/DataVisualizationInsights';
+import CustomersBlock from './components/CustomersBlock';
 import FAQBlock from './components/FAQBlock';
-import AlmostEndBlock from './components/AlmostEndBlock';
+import CallToActionSection from './components/CallToActionSection';
 import Footer from './components/Footer';
+
 
 const MainPage = () => {
   return (
     <Template>
       <NavigationPanel />
-      <FirstBlock />
-      <SecondBlock />
-      <ThirdBlock/>
-      <FourthBlock/>
-      <CustomerBlock/>
+      <DataInsightsOverview/>
+      <ActionableInsightsSection/>
+      <RealTimeInsightsDashboard/>
+      <DataVisualizationInsights/>
+      <CustomersBlock/>
       <FAQBlock/>
-      <AlmostEndBlock/>
+      <CallToActionSection/>
       <Footer/>
     </Template>
     
