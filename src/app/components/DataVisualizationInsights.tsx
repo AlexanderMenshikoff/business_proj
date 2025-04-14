@@ -19,7 +19,7 @@ const DataVisualizationInsights = () => {
       />
       <div className="block sm:flex sm:gap-[30px] sm:justify-center">
         {dataVisualizationInsightsData.map((el) => (
-          <div className="relative" key={el.id}>
+          <div className="relative max-w-[340px]" key={el.id}>
             <Image
               className="absolute top-[-35px] left-0 sm:top-[25px] sm:left-0"
               src={el.img}
