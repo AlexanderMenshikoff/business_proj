@@ -17,7 +17,7 @@ const FAQBlock = () => {
         <div className="flex justify-between mb-[20px]">
           <p className="text-[18px]">{el.question}</p>
           <Image
-            src="/block_imgs/minus_img.png"
+            src="/blocks_imgs/minus_img.png"
             alt=""
             width={25}
             height={25}
@@ -46,7 +46,7 @@ const FAQBlock = () => {
             <div className="flex justify-between py-[22px] px-[30px] flex-wrap ">
               <p className="text-[18px]">{el.question}</p>
               <Image
-                src="/block_imgs/plus_img.png"
+                src="/blocks_imgs/plus_img.png"
                 alt=""
                 width={25}
                 height={20}
