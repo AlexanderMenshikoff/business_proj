@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Logo from './Logo';
 import { FooterLinksData } from '../data';
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
       <div>
         <div className="border-[1px] border-[#1b1b1b] mb-[20px] "></div>
         <div className="flex justify-between items-center">
-          <Image src="/logo.png" alt="" width={100} height={100} />
+          <Logo/>
           <p className="text-[12px] text-[#b6b6b6]">© Torch 2024</p>
         </div>
       </div>

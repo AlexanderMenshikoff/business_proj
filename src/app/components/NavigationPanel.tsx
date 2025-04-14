@@ -1,11 +1,11 @@
-import Image from 'next/image';
 import Button from './Button';
+import Logo from './Logo';
 
 const NavigationPanel = () => {
   return (
     <nav className="flex w-[100vw] justify-between items-center mt-[10px]">
       <div className="flex gap-10">
-        <Image src="/logo.png" height={50} width={100} alt="Logo" />
+        <Logo/>
         <ul className="flex gap-8 items-center">
           <li className="text-[12px]">
             <a>Features</a>
