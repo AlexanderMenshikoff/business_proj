@@ -1,9 +1,9 @@
-interface IFirstBlockData {
+interface IfirstBlockData {
   mainHeader: string;
   text: string;
 }
 
-interface ISecondBlockData {
+interface IsecondBlockData {
   header: string;
   text: string;
   img: string;
@@ -12,7 +12,7 @@ interface ISecondBlockData {
   id: number;
 }
 
-interface IThirdBlockData {
+interface IthirdBlockData {
     header: string;
     text: string;
     img: string;
@@ -20,7 +20,7 @@ interface IThirdBlockData {
     id: number;
   }
 
-interface ICustomerReviewData {
+interface IcustomerReviewData {
   companyLogo: string;
   companyLogoWidth: number,
   customerReview: string;
@@ -36,18 +36,18 @@ export interface IFAQBlockData {
   id:number;
 }
 
-export interface IFooterLinksData {
+export interface IfooterLinksData {
   columnName: string;
   columnText: string[];
   id:number;
 }
 
-export const firstBlockData: IFirstBlockData = {
+export const firstBlockData: IfirstBlockData = {
   mainHeader: 'Powerful data insights for all',
   text: 'Torch makes data analysis easy for everyone. Visualise key metrics, track perfomance, and dsicover trends without needing a data science background.',
 };
 
-export const SecondBlockData: ISecondBlockData[] = [
+export const secondBlockData: IsecondBlockData[] = [
   {
     header: 'Easy-to-use dashboards',
     text: 'Creative intuitive, custom dashboards to visualise your most important metrics. No coding or technical skills required.',
@@ -82,7 +82,7 @@ export const SecondBlockData: ISecondBlockData[] = [
   },
 ];
 
-export const ThirdBlockData:IThirdBlockData[] = [
+export const thirdBlockData:IthirdBlockData[] = [
   {
     header: 'Instant updates',
     text: 'Always stay up-to-date with live data flowing directly into your dashboard. Track changes as they happen.',
@@ -106,7 +106,7 @@ export const ThirdBlockData:IThirdBlockData[] = [
   },
 ];
 
-export const FourthBlockData:IThirdBlockData[] = [
+export const fourthBlockData:IthirdBlockData[] = [
   {
     header: 'Automated reports',
     text: 'Save time with automated, scheduled reports. Get the insights you need, delivered straight to your inbox.',
@@ -131,7 +131,7 @@ export const FourthBlockData:IThirdBlockData[] = [
 ];
 
 
-export const CustomersBlockData: ICustomerReviewData[] = [
+export const customersBlockData: IcustomerReviewData[] = [
   {
     companyLogo: '/companies_logos/someday_logo_white.png',
     companyLogoWidth: 120,
@@ -191,7 +191,7 @@ export const FAQBlockData:IFAQBlockData[] = [
 ]
 
 
-export const FooterLinksData: IFooterLinksData[]= [
+export const footerLinksData: IfooterLinksData[]= [
   {
     columnName: 'Product',
     columnText: ['Home', 'Features', 'Pricing', 'Sign in'],
