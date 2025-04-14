@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ThirdBlockData } from '../data';
+import { thirdBlockData } from '../data';
 
 const ThirdBlock = () => {
   return (
@@ -18,7 +18,7 @@ const ThirdBlock = () => {
         height={500}
       />
       <div className="flex gap-[30px] justify-center">
-        {ThirdBlockData.map((el) => (
+        {thirdBlockData.map((el) => (
           <div className="relative max-w-[340px]" key={el.id}>
             <Image
               className="absolute top-[25px] left-0"

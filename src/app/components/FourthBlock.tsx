@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FourthBlockData } from '../data';
+import { fourthBlockData } from '../data';
 
 const FourthBlock = () => {
   return (
@@ -18,7 +18,7 @@ const FourthBlock = () => {
         height={500}
       />
       <div className="flex gap-[30px] justify-center">
-        {FourthBlockData.map((el) => (
+        {fourthBlockData.map((el) => (
           <div className="relative" key={el.id}>
             <Image
               className="absolute top-[25px] left-0"

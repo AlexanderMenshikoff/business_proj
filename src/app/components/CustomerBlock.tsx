@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { CustomersBlockData } from '../data';
+import { customersBlockData } from '../data';
 
 const CustomerBlock = () => {
   return (
     <div className="mt-[50px] mb-[100px]">
       <h2 className="text-[40px] mb-[25px]">Kind words from customers</h2>
       <div className="flex gap-[20px]">
-        {CustomersBlockData.map((el) => {
+        {customersBlockData.map((el) => {
           return (
             <div
               key={el.id}

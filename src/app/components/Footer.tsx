@@ -1,11 +1,11 @@
 import Logo from './Logo';
-import { FooterLinksData } from '../data';
+import { footerLinksData } from '../data';
 
 const Footer = () => {
   return (
     <div className="w-[100vw] mb-[100px] mt-[20px]">
       <div className="flex justify-between mt-[70px] flex-wrap mb-[60px]">
-        {FooterLinksData.map((el) => (
+        {footerLinksData.map((el) => (
           <div key={el.id} className="">
             <p className="mb-[15px] text-[#b6b6b6] text-[12px]">
               {el.columnName}
